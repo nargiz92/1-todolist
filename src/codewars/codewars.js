@@ -51,10 +51,6 @@ console.log(disemvowel('hOAEjdeeareaoiyu'))
 //
 
 //solution
-// const helloWorld = () => {
-// return ${Hello, World!.replace(/['"`]/g,'');
-// // const greetings=['Hello, World!']
-// // return greetings.toString()
-// };
-//
-// console.log(helloWorld())
+const greeting='Hello, World!'
+const helloWorld = () =>  greeting
+
