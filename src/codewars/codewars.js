@@ -54,3 +54,13 @@ console.log(disemvowel('hOAEjdeeareaoiyu'))
 const greeting='Hello, World!'
 const helloWorld = () =>  greeting
 
+//--------------------------------------------------------------------------------------------------
+
+//Convert boolean values to strings 'Yes' or 'No'.
+//Solution
+function boolToWord( bool ){
+    return bool?'Yes':'No'
+}
+
+
+console.log(boolToWord(true))
