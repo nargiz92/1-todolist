@@ -1,5 +1,3 @@
-
-
 //  const countSheeps = (arrOfSheep) => {
 //     return arrOfSheep.filter(el=>el===true).length
 // }
@@ -39,7 +37,7 @@
 
 //Solution
 function disemvowel(str) {
-    return str.replace(/[aeuio]/gi,'')
+    return str.replace(/[aeuio]/gi, '')
 }
 
 console.log(disemvowel('hOAEjdeeareaoiyu'))
@@ -51,16 +49,27 @@ console.log(disemvowel('hOAEjdeeareaoiyu'))
 //
 
 //solution
-const greeting='Hello, World!'
-const helloWorld = () =>  greeting
+const greeting = 'Hello, World!'
+const helloWorld = () => greeting
 
 //--------------------------------------------------------------------------------------------------
+//
+// //Convert boolean values to strings 'Yes' or 'No'.
+// //Solution
+// function boolToWord( bool ){
+//     return bool?'Yes':'No'
+// }
+//
+//
+// console.log(boolToWord(true))
 
-//Convert boolean values to strings 'Yes' or 'No'.
-//Solution
-function boolToWord( bool ){
-    return bool?'Yes':'No'
+//_____________________________________
+
+//Hex to Decimal
+//Complete the function which converts hex number (given as a string) to a decimal number.
+//Solution.
+
+function hexToDec(hexString){
+   return parseInt(hexString,16)
+    //your code here
 }
-
-
-console.log(boolToWord(true))
