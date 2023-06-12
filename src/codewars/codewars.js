@@ -84,3 +84,17 @@ function shortcut (string) {
 }
 
 shortcut('Hello')
+
+//----------------------------------------------------------------------------
+//Create Phone Number
+//Write a function that accepts an array of 10 integers (between 0 and 9),
+// that returns a string of those numbers in the form of a phone number.
+//Solution
+function createPhoneNumber(numbers){
+let n1=numbers.toString()
+    let n2=n1.replace(/,/g,'')
+        let n3=`(${n2[0]}${n2[1]}${n2[2]}) ${n2[3]}${n2[4]}${n2[5]}-${n2[6]}${n2[7]}${n2[8]}${n2[9]}`
+   return n3
+}
+
+createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
