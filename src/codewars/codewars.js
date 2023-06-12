@@ -80,7 +80,6 @@ function hexToDec(hexString){
 
 //Solution
 function shortcut (string) {
-    console.log(string.replace(/[aeuio]/gi, ''))
     return string.replace(/[aeuio]/gi, '')
 }
 
