@@ -73,3 +73,15 @@ function hexToDec(hexString){
    return parseInt(hexString,16)
     //your code here
 }
+//-----------------------------------------------------------------------
+//Vowel remover
+
+//Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.
+
+//Solution
+function shortcut (string) {
+    console.log(string.replace(/[aeuio]/gi, ''))
+    return string.replace(/[aeuio]/gi, '')
+}
+
+shortcut('Hello')
