@@ -98,3 +98,17 @@ let n1=numbers.toString()
 }
 
 createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
+
+//--------------------------------------------------------------------------
+//Super Duper Easy
+//Make a function that returns the value multiplied by 50 and increased by 6.
+// If the value entered is a string it should return "Error".
+//Solution
+
+function problem(x){
+
+   return ( typeof x ==='number') ?x*50+6:'Error'
+    //your code here
+}
+
+console.log(problem(2))
