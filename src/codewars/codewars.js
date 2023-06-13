@@ -112,3 +112,13 @@ function problem(x){
 }
 
 console.log(problem(2))
+
+//------------------------------------------------------------------------------
+
+//Bin to Decima
+//Complete the function which converts a binary number (given as a string) to a decimal number.
+//Solution
+
+function binToDec(bin){
+    return parseInt(bin,2)
+}
