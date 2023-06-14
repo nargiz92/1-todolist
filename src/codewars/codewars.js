@@ -39,8 +39,8 @@
 function disemvowel(str) {
     return str.replace(/[aeuio]/gi, '')
 }
-
-console.log(disemvowel('hOAEjdeeareaoiyu'))
+//
+// console.log(disemvowel('hOAEjdeeareaoiyu'))
 //-------------------------------------------------------------------------------------------------------
 // Hello World - Without Strings
 // You need to create a function, helloWorld, that will return the String Hello, World!
@@ -110,8 +110,8 @@ function problem(x){
    return ( typeof x ==='number') ?x*50+6:'Error'
     //your code here
 }
-
-console.log(problem(2))
+//
+// console.log(problem(2))
 
 //------------------------------------------------------------------------------
 
@@ -122,3 +122,12 @@ console.log(problem(2))
 function binToDec(bin){
     return parseInt(bin,2)
 }
+//------------------------------------------------------------------------------------
+//Function 1 - hello world
+//Make a simple function called greet that returns the most-famous "hello world!".
+//
+// Style Points
+// Sure, this is about as easy as it gets.
+// But how clever can you be to create the most creative "hello world" you can think of? What is a "hello world" solution you would want to show your friends?
+
+const greet=()=>'hello world!'
