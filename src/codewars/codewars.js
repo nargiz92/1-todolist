@@ -131,3 +131,22 @@ function binToDec(bin){
 // But how clever can you be to create the most creative "hello world" you can think of? What is a "hello world" solution you would want to show your friends?
 
 const greet=()=>'hello world!'
+
+//---------------------------------------------------------------------------------
+//Who likes it?
+//You probably know the "like" system from Facebook and other pages.
+// People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.
+//
+// Implement the function which takes an array containing the names of people that like an item.
+// It must return the display text as shown in the examples:
+//Solution
+function likes(names) {
+
+return names.length===1?`${names} likes this`:(names.length===2)?`${names[0]} and ${names[1]} like this`:(names.length===3)?`${names[0]}, ${names[1]} and ${names[2]} like this`:(names.length>3)?`${names[0]}, ${names[1]} and ${names.length-2} others like this`:`no one likes this`
+
+}
+
+console.log(likes([]))
+console.log(likes(["Jacob", "Alex",'Ann']))
+console.log(likes(["Jacob", "Alex",'Ann','Ali']))
+console.log(likes(["Jacob", "Alex"]))
