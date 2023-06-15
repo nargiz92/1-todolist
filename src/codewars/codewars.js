@@ -165,3 +165,16 @@ return names.length===1
 function sayHello(name) {
     return `Hello, ${name}`
 }
+
+
+//---------------------------------------------------------------------------------------------------
+//Returning Strings
+//Make a function that will return a greeting statement that uses an input;
+// your program should return, "Hello, <name> how are you doing today?".
+//Solution
+function greet1(name){
+   return `Hello, ${name} how are you doing today?`
+    //your code here
+}
+
+console.log(greet1('Nargiza'))
