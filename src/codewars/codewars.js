@@ -142,11 +142,26 @@ const greet=()=>'hello world!'
 //Solution
 function likes(names) {
 
-return names.length===1?`${names} likes this`:(names.length===2)?`${names[0]} and ${names[1]} like this`:(names.length===3)?`${names[0]}, ${names[1]} and ${names[2]} like this`:(names.length>3)?`${names[0]}, ${names[1]} and ${names.length-2} others like this`:`no one likes this`
+return names.length===1
+    ?`${names} likes this`:(names.length===2)
+        ?`${names[0]} and ${names[1]} like this`:(names.length===3)
+            ?`${names[0]}, ${names[1]} and ${names[2]} like this`:(names.length>3)
+                ?`${names[0]}, ${names[1]} and ${names.length-2} others like this`
+                :`no one likes this`
 
 }
 
-console.log(likes([]))
-console.log(likes(["Jacob", "Alex",'Ann']))
-console.log(likes(["Jacob", "Alex",'Ann','Ali']))
-console.log(likes(["Jacob", "Alex"]))
+// console.log(likes([]))
+// console.log(likes(["Jacob", "Alex",'Ann']))
+// console.log(likes(["Jacob", "Alex",'Ann','Ali']))
+// console.log(likes(["Jacob", "Alex"]))
+//----------------------------------------------------------------------------------------------
+
+//Grasshopper - Debug sayHello
+//The starship Enterprise has run into some problem when creating a program to greet everyone as they come aboard.
+// It is your job to fix the code and get the program working again!
+//Solution
+
+function sayHello(name) {
+    return `Hello, ${name}`
+}
