@@ -177,7 +177,7 @@ function greet1(name){
     //your code here
 }
 
-console.log(greet1('Nargiza'))
+//console.log(greet1('Nargiza'))
 //---------------------------------------------------------------------------------------------------------
 //A Needle in the Haystack
 //Can you find the needle in the haystack?
@@ -198,4 +198,18 @@ function findNeedle(haystack) {
     // your code here
 }
 
-console.log(findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]))
+//console.log(findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]))
+//----------------------------------------------------------------------------------------------------------
+
+//TS
+//Return Negative
+//In this simple assignment you are given a number and have to make it negative.
+// But maybe the number is already negative?
+//Solution
+
+// export const makeNegative = (num: number): number => {
+//     // TODO
+//     return Math.abs(num)&&-Math.abs(num)
+//
+// };
+//console.log(makeNegative(8))
