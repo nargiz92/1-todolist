@@ -243,7 +243,7 @@ function areYouPlayingBanjo(name) {
     return name[0]==='R'?`${name} plays banjo`:(name[0]==='r')?`${name} plays banjo`:`${name} does not play banjo`
 }
 
-console.log(areYouPlayingBanjo('ramira'))
+//console.log(areYouPlayingBanjo('ramira'))
 //--------------------------------------------------------------------------------------------------
 //In this kata you will create a function that takes a list
 // of non-negative integers and strings and returns a new list with the strings filtered out.
@@ -253,4 +253,27 @@ function filter_list(l) {
     // Return a new array with the strings filtered out
 }
 
-console.log(filter_list(['apple', 2, 'hi',5]))
+//console.log(filter_list(['apple', 2, 'hi',5]))
+
+//-----------------------------------------------------------------------------------------------------
+//The Hashtag Generator
+//It must start with a hashtag (#).
+// All words must have their first letter capitalized.
+// If the final result is longer than 140 chars it must return false.
+// If the input or the result is an empty string it must return false.
+
+//Solution
+function generateHashtag (str) {
+if (str===''||str===' '){
+   return false
+}
+if (str){
+    const a=  str.replace(/(^\w|\s\w)/g, m => m.toUpperCase())
+      const b= a.split(' ')
+     const c= b.filter(el=>el!=='').join('')
+   return  c.length>=140?false:(c==='#')?false:(c==='')?false:(c===' ')?false:`#${c}`
+}
+
+}
+
+//console.log(generateHashtag(''))
