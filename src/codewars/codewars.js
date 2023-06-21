@@ -244,3 +244,13 @@ function areYouPlayingBanjo(name) {
 }
 
 console.log(areYouPlayingBanjo('ramira'))
+//--------------------------------------------------------------------------------------------------
+//In this kata you will create a function that takes a list
+// of non-negative integers and strings and returns a new list with the strings filtered out.
+//Solution:
+function filter_list(l) {
+    return l.filter(t=>typeof t=="number")
+    // Return a new array with the strings filtered out
+}
+
+console.log(filter_list(['apple', 2, 'hi',5]))
