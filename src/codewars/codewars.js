@@ -39,6 +39,7 @@
 function disemvowel(str) {
     return str.replace(/[aeuio]/gi, '')
 }
+
 //
 // console.log(disemvowel('hOAEjdeeareaoiyu'))
 //-------------------------------------------------------------------------------------------------------
@@ -69,32 +70,33 @@ const helloWorld = () => greeting
 //Complete the function which converts hex number (given as a string) to a decimal number.
 //Solution.
 
-function hexToDec(hexString){
-   return parseInt(hexString,16)
+function hexToDec(hexString) {
+    return parseInt(hexString, 16)
     //your code here
 }
+
 //-----------------------------------------------------------------------
 //Vowel remover
 
 //Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.
 
 //Solution
-function shortcut (string) {
+function shortcut(string) {
     return string.replace(/[aeuio]/gi, '')
 }
 
-shortcut('Hello')
+console.log(shortcut('Hello'))
 
 //----------------------------------------------------------------------------
 //Create Phone Number
 //Write a function that accepts an array of 10 integers (between 0 and 9),
 // that returns a string of those numbers in the form of a phone number.
 //Solution
-function createPhoneNumber(numbers){
-let n1=numbers.toString()
-    let n2=n1.replace(/,/g,'')
-        let n3=`(${n2[0]}${n2[1]}${n2[2]}) ${n2[3]}${n2[4]}${n2[5]}-${n2[6]}${n2[7]}${n2[8]}${n2[9]}`
-   return n3
+function createPhoneNumber(numbers) {
+    let n1 = numbers.toString()
+    let n2 = n1.replace(/,/g, '')
+    let n3 = `(${n2[0]}${n2[1]}${n2[2]}) ${n2[3]}${n2[4]}${n2[5]}-${n2[6]}${n2[7]}${n2[8]}${n2[9]}`
+    return n3
 }
 
 createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
@@ -105,11 +107,12 @@ createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
 // If the value entered is a string it should return "Error".
 //Solution
 
-function problem(x){
+function problem(x) {
 
-   return ( typeof x ==='number') ?x*50+6:'Error'
+    return (typeof x === 'number') ? x * 50 + 6 : 'Error'
     //your code here
 }
+
 //
 // console.log(problem(2))
 
@@ -119,9 +122,10 @@ function problem(x){
 //Complete the function which converts a binary number (given as a string) to a decimal number.
 //Solution
 
-function binToDec(bin){
-    return parseInt(bin,2)
+function binToDec(bin) {
+    return parseInt(bin, 2)
 }
+
 //------------------------------------------------------------------------------------
 //Function 1 - hello world
 //Make a simple function called greet that returns the most-famous "hello world!".
@@ -130,7 +134,7 @@ function binToDec(bin){
 // Sure, this is about as easy as it gets.
 // But how clever can you be to create the most creative "hello world" you can think of? What is a "hello world" solution you would want to show your friends?
 
-const greet=()=>'hello world!'
+const greet = () => 'hello world!'
 
 //---------------------------------------------------------------------------------
 //Who likes it?
@@ -142,12 +146,12 @@ const greet=()=>'hello world!'
 //Solution
 function likes(names) {
 
-return names.length===1
-    ?`${names} likes this`:(names.length===2)
-        ?`${names[0]} and ${names[1]} like this`:(names.length===3)
-            ?`${names[0]}, ${names[1]} and ${names[2]} like this`:(names.length>3)
-                ?`${names[0]}, ${names[1]} and ${names.length-2} others like this`
-                :`no one likes this`
+    return names.length === 1
+        ? `${names} likes this` : (names.length === 2)
+            ? `${names[0]} and ${names[1]} like this` : (names.length === 3)
+                ? `${names[0]}, ${names[1]} and ${names[2]} like this` : (names.length > 3)
+                    ? `${names[0]}, ${names[1]} and ${names.length - 2} others like this`
+                    : `no one likes this`
 
 }
 
@@ -172,8 +176,8 @@ function sayHello(name) {
 //Make a function that will return a greeting statement that uses an input;
 // your program should return, "Hello, <name> how are you doing today?".
 //Solution
-function greet1(name){
-   return `Hello, ${name} how are you doing today?`
+function greet1(name) {
+    return `Hello, ${name} how are you doing today?`
     //your code here
 }
 
@@ -191,9 +195,9 @@ function greet1(name){
 //Solution:
 
 function findNeedle(haystack) {
-  const stack=haystack.findIndex((st)=>{
-      return st==='needle'
-  })
+    const stack = haystack.findIndex((st) => {
+        return st === 'needle'
+    })
     return `found the needle at position ${stack}`
     // your code here
 }
@@ -218,14 +222,15 @@ function findNeedle(haystack) {
 //Beginner - Lost Without a Map
 //Given an array of integers, return a new array with each value doubled.
 //Solution
-function maps(x){
-    return x.map(el=>el+el)
+function maps(x) {
+    return x.map(el => el + el)
 }
+
 //-------------------------------------------------------------------------------------------------------
 //Convert a Boolean to a String
 //Implement a function which convert the given boolean value into its string representation.
 //Solution
-const booleanToString=(b)=> b===true?'true':'false'
+const booleanToString = (b) => b === true ? 'true' : 'false'
 //------------------------------------------------------------------------------------------------------------------
 //Are You Playing Banjo?
 //Create a function which answers the question "Are you playing banjo?".
@@ -240,7 +245,7 @@ const booleanToString=(b)=> b===true?'true':'false'
 
 function areYouPlayingBanjo(name) {
     // Implement me
-    return name[0]==='R'?`${name} plays banjo`:(name[0]==='r')?`${name} plays banjo`:`${name} does not play banjo`
+    return name[0] === 'R' ? `${name} plays banjo` : (name[0] === 'r') ? `${name} plays banjo` : `${name} does not play banjo`
 }
 
 //console.log(areYouPlayingBanjo('ramira'))
@@ -249,7 +254,7 @@ function areYouPlayingBanjo(name) {
 // of non-negative integers and strings and returns a new list with the strings filtered out.
 //Solution:
 function filter_list(l) {
-    return l.filter(t=>typeof t=="number")
+    return l.filter(t => typeof t == "number")
     // Return a new array with the strings filtered out
 }
 
@@ -263,16 +268,16 @@ function filter_list(l) {
 // If the input or the result is an empty string it must return false.
 
 //Solution
-function generateHashtag (str) {
-if (str===''||str===' '){
-   return false
-}
-if (str){
-    const a=  str.replace(/(^\w|\s\w)/g, m => m.toUpperCase())
-      const b= a.split(' ')
-     const c= b.filter(el=>el!=='').join('')
-   return  c.length>=140?false:(c==='#')?false:(c==='')?false:(c===' ')?false:`#${c}`
-}
+function generateHashtag(str) {
+    if (str === '' || str === ' ') {
+        return false
+    }
+    if (str) {
+        const a = str.replace(/(^\w|\s\w)/g, m => m.toUpperCase())
+        const b = a.split(' ')
+        const c = b.filter(el => el !== '').join('')
+        return c.length >= 140 ? false : (c === '#') ? false : (c === '') ? false : (c === ' ') ? false : `#${c}`
+    }
 
 }
 
@@ -282,8 +287,8 @@ if (str){
 //MakeUpperCase
 //Write a function which converts the input string to uppercase.
 //Solution
-const makeUpperCase=(str) =>str.toUpperCase()
-    // Code here
+const makeUpperCase = (str) => str.toUpperCase()
+// Code here
 
 console.log(makeUpperCase('hello'))
 //__________________________________________________________________________________________________---
@@ -296,8 +301,17 @@ console.log(makeUpperCase('hello'))
 //Solution
 
 function check(a, x) {
-return a.includes(x)
+    return a.includes(x)
 }
 
-console.log(check([5,10],5))
-console.log(check([5,10],1))
+console.log(check([5, 10], 5))
+console.log(check([5, 10], 1))
+
+//----------------------------------------------------------------------------------------------------------
+//Even or Odd
+//Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+function evenOrOdd(number) {
+    return ( number & 1 ) ? "Odd" : "Even";
+}
+
+console.log(evenOrOdd(-2))
